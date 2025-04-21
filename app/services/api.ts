@@ -415,7 +415,7 @@ const api = {
       }
     }
   },
-
+  
   getCustomerDetails: async (token: string, customerId: string): Promise<CustomerDetails> => {
     try {
       const response = await axios.get(`${BASE_URL}/rest/V1/customers/${customerId}`, {
